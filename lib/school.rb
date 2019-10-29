@@ -1,5 +1,7 @@
 # code here!
 require 'pry'
+
+
 class School
 
     def initialize(school_name)
@@ -25,8 +27,9 @@ class School
     end
   
     def sort
-        @roster.each do |grade, name|
-            @roster[grade] = name.sort
+        @roster.each do |grade, names|
+            @roster[grade] = names.sort
+            
         end
     end
 
